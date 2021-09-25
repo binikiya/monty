@@ -80,7 +80,7 @@ void m_pchar(stack_t **stack, unsigned int line_number);
 void m_pstr(stack_t **stack, unsigned int line_number);
 void free_stack(int status, void *arg);
 void m_fs_close(int status, void *arg);
-void free_lineprt(int stutus, void *arg);
+void free_lineptr(int stutus, void *arg);
 stack_t *add_node(stack_t **stack, const int n);
 
 #endif
