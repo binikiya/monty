@@ -31,7 +31,9 @@ int n;
 arg = strtok(NULL, "\n\t\r ");
 if (arg == NULL || check_for_digit(arg))
 {
-dprintf(STDOUT_FILENO, "L%u: usage: push integer\n", line_number);
+dprintf(STDOUT_FILENO,
+	"L%u: usage: push integer\n",
+	line_number);
 exit(EXIT_FAILURE);
 }
 n = atoi(arg);
